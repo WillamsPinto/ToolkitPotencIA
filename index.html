@@ -6,7 +6,7 @@
   <title>Página inicial - PotencIA</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="home-page">
   <header class="mobile-header">
     <div class="mobile-brand">
       <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
@@ -18,9 +18,7 @@
 
   <div class="layout">
     <aside class="sidebar" id="site-sidebar">
-      <div class="search-box">
-        <input type="text" placeholder="Search this site" aria-label="Search this site" />
-      </div>
+      <div class="search-icon" aria-hidden="true">⌕</div>
 
       <a href="index.html" class="brand">
         <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
@@ -29,76 +27,123 @@
 
       <nav aria-label="Navegação do site">
         <a class="nav-item active" href="index.html">Página inicial</a>
-        <a class="nav-item " href="pages/catalogo.html">Catálogo de Ferramentas</a>
 
-        <details open>
-          <summary>Assistentes</summary>
+        <details>
+          <summary data-href="pages/assistentes.html">Assistentes</summary>
           <div class="group">
-            <a class="nav-item " href="pages/assistentes.html">Assistentes de IA</a>
-            <span class="leaf">Planejamento Pedagógico</span>
-            <span class="leaf">Mediação Pedagógica</span>
-            <span class="leaf">Avaliação e Reflexão</span>
+            <a class="nav-item" href="pages/catalogo.html">Catálogo de Ferramentas</a>
+
+            <details>
+              <summary data-href="pages/planejamento.html">Assistentes de IA para Planejamento Pedagógico</summary>
+              <div class="subgroup">
+                <a class="leaf-link" href="pages/chatgpt.html">ChatGPT</a>
+                <a class="leaf-link" href="pages/gemini.html">Gemini</a>
+                <a class="leaf-link" href="pages/ideamap-ai.html">Ideamap AI</a>
+                <a class="leaf-link" href="pages/phind.html">Phind</a>
+                <a class="leaf-link" href="pages/magicschool-ai.html">MagicSchool AI</a>
+                <a class="leaf-link" href="pages/slidesai.html">SlidesAI</a>
+                <a class="leaf-link" href="pages/gamma-app.html">Gamma.app</a>
+              </div>
+            </details>
+
+            <details>
+              <summary data-href="pages/mediacao.html">Assistentes de IA para Mediação Pedagógica</summary>
+              <div class="subgroup">
+                <a class="leaf-link" href="pages/canva.html">Canva</a>
+                <a class="leaf-link" href="pages/adobe-firefly.html">Adobe Firefly</a>
+                <a class="leaf-link" href="pages/leonardo-ai.html">Leonador AI</a>
+                <a class="leaf-link" href="pages/bing-image-creator.html">Bing Image Creator</a>
+                <a class="leaf-link" href="pages/imagefx.html">ImageFX</a>
+                <a class="leaf-link" href="pages/autodraw.html">AutoDraw</a>
+                <a class="leaf-link" href="pages/invideo-ai.html">Invideo AI</a>
+                <a class="leaf-link" href="pages/vidnoz-ai.html">Vidnoz AI</a>
+                <a class="leaf-link" href="pages/ai-song-generator.html">AI Song Generator</a>
+                <a class="leaf-link" href="pages/suno-ai.html">Suno AI</a>
+                <a class="leaf-link" href="pages/animated-drawings.html">Animated Drawings</a>
+                <a class="leaf-link" href="pages/murf-ai.html">Murf.ai</a>
+                <a class="leaf-link" href="pages/khanmigo-beta.html">Khanmigo (beta)</a>
+              </div>
+            </details>
+
+            <details>
+              <summary data-href="pages/avaliacao.html">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</summary>
+              <div class="subgroup">
+                <a class="leaf-link" href="pages/quillbot.html">QuillBot</a>
+                <a class="leaf-link" href="pages/max-ai.html">Max AI</a>
+                <a class="leaf-link" href="pages/liner-ai.html">Liner AI</a>
+                <a class="leaf-link" href="pages/chatpdf.html">ChatPDF</a>
+                <a class="leaf-link" href="pages/languagetool.html">LanguageTool</a>
+              </div>
+            </details>
           </div>
         </details>
 
         <details open>
-          <summary>Formação</summary>
+          <summary data-href="pages/orientacao-para-o-uso-da-ia.html">Orientação para o uso da IA</summary>
           <div class="group">
-            <a class="nav-item " href="pages/formacao.html">Página de Formação</a>
-            <span class="leaf">IA como Aliada da Educação 4.0</span>
-            <span class="leaf">Ética no Uso da IA</span>
-            <span class="leaf">Engenharia de Prompt</span>
-            <span class="leaf">Exemplos Práticos</span>
+            <a class="leaf-link" href="pages/ia-como-aliada-da-educacao-4-0.html">IA como Aliada da Educação 4.0</a>
+            <a class="leaf-link" href="pages/etica-no-uso-da-inteligencia-artificial.html">Ética no Uso da Inteligência Artificial</a>
+            <a class="leaf-link" href="pages/engenharia-de-prompt.html">Engenharia de Prompt</a>
+            <a class="leaf-link" href="pages/exemplos-praticos.html">Exemplos Práticos</a>
           </div>
         </details>
 
-        <a class="nav-item " href="pages/sobre.html">Sobre</a>
+        <a class="nav-item" href="pages/sobre.html">Sobre</a>
       </nav>
     </aside>
 
     <main class="content">
-      <div class="page">
-        
-<section class="hero">
-  <img class="hero-logo" src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
-  <h1>Potenc IA - Toolkit</h1>
-  <p>Capacitando educadores no uso responsável da Inteligência Artificial Generativa na prática pedagógica</p>
-</section>
-
-<section>
-  <h2>Missão</h2>
-  <div class="mission">
-    Integrar de forma prática e acessível a Inteligência Artificial (IA) ao contexto educacional, fornecendo aos educadores um guia que apresenta, ensina e orienta o uso de ferramentas baseadas em IA Generativa no processo de ensino.
-  </div>
-</section>
-
-<section>
-  <h2>Explorando o Potencial da IA no Ensino</h2>
-  <div class="cards">
-    <a class="card" href="pages/assistentes.html">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRQj2W9N5-L0rLuKiLa33TUhyAl0XqoOkQ49ov7Mhu4eydh4dyUZ6sZEwVDa036yPhzjbCMrOnv3Aa4efo9g4-6YnWwwAm25NhB_hNGTYrvRr6TDSsy2riQkhX3OWB21m6fnrexrOVAebaBIW4hORofDkO-JUMFJ_7yOnlszwI1piwAsvaJi9eRo5a89lOkjrkLuzMab_Cv9qNNYYrbP3Ycodq7M0GObVxeeWQ=w900" alt="Assistentes de IA para Mediação Pedagógica" />
-      <div class="card-title">Assistentes de IA para Mediação Pedagógica</div>
-    </a>
-    <a class="card" href="pages/assistentes.html">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSSS-eZKtB9cl46k1hR5aIzxQSvRBXVYBu3hRmiSrfFzSMsdk6GvyFpgkGvhYn6Qw3r_7wz30HmoNU5M2tgtsx2V8LCS2voIbxPWRidq0je28731FZCG258mCHfe-DscCabYVuGNvj---IO29gIMlH14F-ozzR1nCSJG3ecBJjz9Pr1uCSzZoZ78ul0QtFoOP42T-aM1Xne3fLfdy8QWKR5gkYVytK1Dpda4sc=w900" alt="Assistentes de IA para Planejamento Pedagógico" />
-      <div class="card-title">Assistentes de IA para Planejamento Pedagógico</div>
-    </a>
-    <a class="card" href="pages/assistentes.html">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSTpvgddAjMOYEb-lHZUljSJqkX5U4qr8wAnimmFuAkA091dPpAZGOkupG8UmazYGxVWBzLobCUacm1-f-3_xEj7-JhcZ7SZeNFR6dqcaZ_2SbAa4E-1YxhJyaHjV8CWnqGZ3EzuM2QDv_uCQQQAeetWm_h4Fw3GyKBiTdrRVGZKNKkcap3qCDMoI3UphqoRVPiP99tz1GZaz5Lb12fKsxqjU8zbCJOom_3zG8=w900" alt="Assistentes de IA para Avaliação e Reflexão da Aprendizagem" />
-      <div class="card-title">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</div>
-    </a>
-  </div>
-
-  <div class="cta-wrap">
-    <a class="cta" href="pages/catalogo.html">Saiba Mais</a>
-    <a class="youtube-link" href="#">YouTube</a>
-  </div>
-</section>
-
-        <footer class="footer">
-          willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025
-        </footer>
+      <div class="home-hero">
+        <img src="assets/hero-home.png" alt="PotencIA - Toolkit" />
+        <div class="hero-overlay">
+          <h1>PotencIA - Toolkit</h1>
+          <p>Capacitando educadores no uso responsável da Inteligência Artificial Generativa na prática pedagógica</p>
+        </div>
       </div>
+
+      <section class="home-mission">
+        <h2>Missão</h2>
+        <p>Integrar de forma prática e acessível a Inteligência Artificial (IA) ao contexto educacional, fornecendo aos educadores um guia que apresenta, ensina e orienta o uso de ferramentas baseadas em IA Generativa no processo de ensino</p>
+      </section>
+
+      <section class="home-highlight">
+        <h2>Explorando o Potencial da IA no Ensino</h2>
+        <div class="home-cards">
+          <a class="home-card" href="pages/mediacao.html">
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSUgpGyM9wNJ3gcg3yqCZfMdcYeRAgjylx1hzgj3h9Yj6s1tW7MHkzJmLgUQMuWRFeccfgAMkjlyrvcG0UcVqmRb6ycjmlEgA4g2aofr05g0Q8M29nzbXKaIaNieHEsGQloJDwPx1IC0QdoEwoHVkuIcYOfzBUAD_ZG_nzHgGeCsHlKybL74OME0GFwQrQxIZmwIvpsjcvc6oQRs5ll1joSMojv077FHLD96hU=w1280" alt="Assistentes de IA para Mediação Pedagógica" />
+            <span>Assistentes de IA para Mediação Pedagógica</span>
+          </a>
+          <a class="home-card" href="pages/planejamento.html">
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRTySBgmn2tTkVaJ3wyQ7MLy-zUfrodaVzXEuqZPBv65K5rJePaLPaPwmh2EnRe9PwrUxKQq3rsIz5euMU5wPb8-_OiTlxp1K4IMMkyrUQhpkgKMo6aE6LW5XjlzjICdgsro1z_F_-tdgvsF6_5yXyf1SmcsS2CT6xL2ib49fHvQGumUvR-5aesPeYthDrsGOtO-VUXbvxnS4PJ8ZOekYGR7BTYsUGxRSkJayM=w1280" alt="Assistentes de IA para Planejamento Pedagógico" />
+            <span>Assistentes de IA para Planejamento Pedagógico</span>
+          </a>
+          <a class="home-card" href="pages/avaliacao.html">
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ3ZmqDJSxEU_0gj6rryE6iZRu_OKFk2XbQwb085Kd4EIQVeq0oW_xHAL0DN4kLsXdBT4U5fC46NgKf_uNgowxtnlNnd9OH7jmJdOeeV_2YAL6yp6LKOoQzyJaHeACRzwFXxxrlSguGERRy44DcBuksNz2fo3sOJkD-hqKBHGyszst0SdTkdCrN3V1gB9OBQcNIGdtzJtPLVBZ_f8ALFxTqzCKrGwsCJ2O-8YI=w1280" alt="Assistentes de IA para Avaliação e Reflexão da Aprendizagem" />
+            <span>Assistentes de IA para Avaliação e Reflexão da Aprendizagem</span>
+          </a>
+        </div>
+        <div class="home-cta-wrap">
+          <a class="home-cta" href="pages/assistentes.html">Saiba Mais</a>
+        </div>
+      </section>
+
+      <section class="home-video" aria-labelledby="video-title">
+        <div class="home-video-inner">
+          <h2 id="video-title">Conheça o PotencIA Toolkit</h2>
+          <div class="home-video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/0PZUXpKjGSI"
+              title="Vídeo de apresentação do PotencIA Toolkit"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer class="home-footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
     </main>
   </div>
 

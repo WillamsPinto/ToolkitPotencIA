@@ -27,3 +27,22 @@ sidebarLinks.forEach(link => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 1080) closeMenu();
 });
+
+
+const sidebarSummariesWithLinks = document.querySelectorAll('.sidebar summary[data-href]');
+sidebarSummariesWithLinks.forEach(summary => {
+  summary.addEventListener('click', (event) => {
+    const details = summary.parentElement;
+    const targetHref = summary.getAttribute('data-href');
+    if (!targetHref) return;
+
+    event.preventDefault();
+
+    if (details && details.tagName === 'DETAILS') {
+      details.open = true;
+    }
+
+    window.location.href = targetHref;
+  });
+});
+

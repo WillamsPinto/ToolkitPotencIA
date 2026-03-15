@@ -1,6 +1,6 @@
 # PotencIA Toolkit - GitHub Pages
 
-Estrutura pronta para publicação no GitHub Pages.
+Versão ajustada com CSS e JavaScript separados, múltiplas páginas e estrutura pronta para GitHub Pages.
 
 ## Estrutura
 - `index.html`
@@ -11,12 +11,11 @@ Estrutura pronta para publicação no GitHub Pages.
 - `assets/css/styles.css`
 - `assets/js/main.js`
 
-## Publicação
+## Como publicar
 1. Envie todos os arquivos para um repositório no GitHub.
 2. Vá em **Settings > Pages**.
-3. Selecione a branch principal e a pasta raiz (`/root`).
-4. Salve e aguarde a publicação.
+3. Em **Build and deployment**, escolha a branch principal e a pasta raiz (`/root`).
+4. Salve.
 
-## Observações
-- O link do YouTube permanece como `#` e pode ser substituído manualmente.
-- As imagens usam URLs externas já presentes na versão construída.
+## Observação
+O estilo foi ajustado para ficar mais próximo do visual do Google Sites, mas não é uma cópia 1:1 do tema nativo.
