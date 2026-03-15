@@ -1274,18 +1274,20 @@ nav .leaf-link.active, nav summary.active{background:linear-gradient(90deg,#e8f0
 
 
 /* Sidebar stretch fix for long pages (index and assistentes) */
-.home-page .layout,
-.assistentes-page .layout{
-  align-items:stretch;
-}
+@media (min-width:1081px){
+  .home-page .layout,
+  .assistentes-page .layout{
+    align-items:stretch;
+  }
 
-.home-page .sidebar,
-.assistentes-page .sidebar{
-  position:relative;
-  top:auto;
-  height:auto;
-  min-height:100%;
-  align-self:stretch;
+  .home-page .sidebar,
+  .assistentes-page .sidebar{
+    position:relative;
+    top:auto;
+    height:auto;
+    min-height:100%;
+    align-self:stretch;
+  }
 }
 
 
