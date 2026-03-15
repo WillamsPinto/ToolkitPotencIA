@@ -55,7 +55,7 @@
     { type: 'link', id: 'sobre', label: 'Sobre', href: 'pages/sobre.html' }
   ];
 
-  const LOGO = 'https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512';
+  const LOGO = 'assets/logo_icon.png';
 
   function normalizeBasePath(value) {
     if (!value || value === '.') return '';

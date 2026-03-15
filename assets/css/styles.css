@@ -513,7 +513,8 @@ body.home-page{
   font-size:17px;
   line-height:1.2;
   font-weight:400;
-  color:#fff;
+  color:#111;
+  font-weight: bold;
 }
 .home-page .hero-overlay p{
   margin:0;
@@ -521,7 +522,8 @@ body.home-page{
   font-size:8px;
   line-height:1.4;
   font-style:italic;
-  color:#fff;
+  color:#111;
+  font-weight: bold;
 }
 .home-page .home-mission{
   text-align:center;
