@@ -1755,7 +1755,6 @@ body.catalogo-home-page{
   }
 }
 
-
 /* Planejamento page aligned with the home page sidebar/menu */
 body.planejamento-page{
   background:#ffffff;
@@ -1990,4 +1989,3 @@ body.planejamento-page{
   .planejamento-page .tool-card{min-height:auto;padding:22px 18px}
   .planejamento-page .tool-card h3{font-size:24px}
 }
-
