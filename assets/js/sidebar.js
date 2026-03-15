@@ -105,7 +105,6 @@
     const homeHref = resolveHref(basePath, 'index.html');
 
     sidebar.innerHTML = `
-      <div class="search-icon" aria-hidden="true">⌕</div>
       <a href="${homeHref}" class="brand">
         <img src="${resolveHref(basePath, LOGO)}" alt="Logo PotencIA" />
         <span>PotencIA</span>
