@@ -1321,6 +1321,16 @@ body.assistentes-page,
   font-weight:700;
   line-height:1.45;
 }
+.sobre-page .full-banner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100% !important;
+  margin:32px auto 28px !important;
+  padding:29px clamp(20px, 7vw, 120px) !important;
+  overflow-wrap:anywhere;
+  text-wrap:balance;
+}
 .assistentes-page .categories{
   padding-top:8px;
 }
