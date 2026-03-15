@@ -1468,7 +1468,7 @@ body.catalogo-home-page{
 .catalogo-home-page .page.catalogo-page{
   max-width:none;
   margin:0;
-  padding:0 0 32px;
+  padding:0;
 }
 .catalogo-home-page .content{
   background:#fff;
@@ -1737,13 +1737,6 @@ body.catalogo-home-page{
   color:#1f6f97;
   font-size:12px;
   font-weight:500;
-}
-.catalogo-home-page .home-footer{
-  text-align:center;
-  padding:18px 16px 20px;
-  font-size:13px;
-  color:#444;
-  background:#fff;
 }
 @media (max-width:1080px){
   .catalogo-home-page .catalogo-summary-grid,
