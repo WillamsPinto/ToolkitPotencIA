@@ -3,7 +3,7 @@
   const MENU = [
     { type: 'link', id: 'index', label: 'Página inicial', href: 'index.html' },
     {
-      type: 'group', id: 'assistentes', label: 'Assistentes', href: 'pages/assistentes.html', children: [
+      type: 'group', id: 'assistentes', label: 'Assistente Pedagógico', href: 'pages/assistentes.html', children: [
         { type: 'link', id: 'catalogo', label: 'Catálogo de Ferramentas', href: 'pages/catalogo.html' },
         {
           type: 'group', id: 'planejamento', label: 'Assistentes de IA para Planejamento Pedagógico', href: 'pages/planejamento.html', children: [
@@ -45,7 +45,7 @@
       ]
     },
     {
-      type: 'group', id: 'orientacao', label: 'Orientação para o uso da IA', href: 'pages/orientacao-para-o-uso-da-ia.html', children: [
+      type: 'group', id: 'orientacao', label: 'Assistente de Orientação', href: 'pages/orientacao-para-o-uso-da-ia.html', children: [
         { type: 'link', id: 'ia-como-aliada-da-educacao-4-0', label: 'IA como Aliada da Educação 4.0', href: 'pages/ia-como-aliada-da-educacao-4-0.html' },
         { type: 'link', id: 'etica-no-uso-da-inteligencia-artificial', label: 'Ética no Uso da Inteligência Artificial', href: 'pages/etica-no-uso-da-inteligencia-artificial.html' },
         { type: 'link', id: 'engenharia-de-prompt', label: 'Engenharia de Prompt', href: 'pages/engenharia-de-prompt.html' },
