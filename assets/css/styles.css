@@ -2202,3 +2202,370 @@ body.planejamento-page{
   .planejamento-page .tool-card h3{font-size:24px}
 }
 
+/* Tool detail page: technical UX aligned with assistentes visual language */
+body.tool-detail-page{
+  background:#ffffff;
+}
+.tool-detail-page .page{
+  max-width:none;
+  padding:0 0 40px;
+}
+.tool-detail-page .content{
+  background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 72%,#ffffff 100%);
+}
+.tool-detail-page .tool-hero,
+.tool-detail-page .tool-panel,
+.tool-detail-page .tool-anchor-nav{
+  max-width:980px;
+  margin:0 auto;
+}
+.tool-detail-page .tool-hero{
+  margin-top:0;
+  display:grid;
+  grid-template-columns:minmax(260px, 340px) minmax(0,1fr);
+  gap:30px;
+  align-items:center;
+  padding:38px 40px 34px;
+  background:linear-gradient(180deg,#ffffff 0%,#f7fafc 100%);
+  border:none;
+  border-radius:0 0 28px 28px;
+  box-shadow:0 10px 24px rgba(32,33,36,.06);
+}
+.tool-detail-page .tool-hero-media{
+  background:#fff;
+  border:1px solid #e3eaf0;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 26px rgba(32,33,36,.06);
+}
+.tool-detail-page .tool-hero-media img{
+  width:100%;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  background:#fff;
+}
+.tool-detail-page .tool-hero-content h1{
+  margin:0 0 12px;
+  text-align:left;
+  font-size:48px;
+  color:#202124;
+  font-weight:700;
+}
+.tool-detail-page .eyebrow{
+  margin:0 0 12px;
+  color:#2c7194;
+  font-size:14px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.tool-detail-page .tool-summary{
+  margin:0;
+  max-width:720px;
+  font-size:18px;
+  line-height:1.72;
+  color:#202124;
+}
+.tool-detail-page .tool-meta-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.tool-detail-page .tool-meta-strip span{
+  display:inline-flex;
+  align-items:center;
+  min-height:36px;
+  padding:0 14px;
+  border-radius:999px;
+  border:1px solid #d8e3ea;
+  background:#f5f8fa;
+  color:#2c7194;
+  font-size:14px;
+  font-weight:600;
+}
+.tool-detail-page .tool-actions.left{
+  justify-content:flex-start;
+  margin-top:22px;
+}
+.tool-detail-page .cta.ghost{
+  background:#fff;
+  color:#176b9a;
+  border:1px solid #c9dce8;
+  box-shadow:none;
+}
+.tool-detail-page .tool-anchor-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:18px 40px 0;
+}
+.tool-detail-page .tool-anchor-nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:38px;
+  padding:0 14px;
+  border-radius:999px;
+  background:#ffffff;
+  border:1px solid #dbe4ea;
+  color:#2c7194;
+  font-size:14px;
+  font-weight:500;
+  box-shadow:0 4px 12px rgba(32,33,36,.04);
+}
+.tool-detail-page .tool-anchor-nav a:hover{
+  border-color:#b8cfdd;
+  color:#176b9a;
+  background:#f7fafc;
+}
+.tool-detail-page .tool-panel{
+  margin-top:24px;
+  padding:30px 40px;
+  background:#fff;
+  border:1px solid #e4eaee;
+  border-radius:28px;
+  box-shadow:0 8px 22px rgba(32,33,36,.04);
+}
+.tool-detail-page .section-heading{
+  margin-bottom:18px;
+}
+.tool-detail-page .section-heading.compact{
+  margin-bottom:14px;
+}
+.tool-detail-page .section-kicker{
+  margin:0 0 8px;
+  color:#2c7194;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.tool-detail-page .section-heading h2{
+  margin:0;
+  text-align:left;
+  color:#202124;
+  font-size:32px;
+  font-weight:700;
+}
+.tool-detail-page .tech-spec-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.tool-detail-page .spec-card{
+  border:1px solid #e2e8ed;
+  border-radius:22px;
+  padding:18px 18px 20px;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfcfd 100%);
+}
+.tool-detail-page .spec-card.accent{
+  background:linear-gradient(180deg,#f4f8fa 0%,#ffffff 100%);
+  border-color:#d5e1e9;
+}
+.tool-detail-page .spec-label{
+  display:block;
+  margin-bottom:8px;
+  color:#5f6368;
+  font-size:13px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.tool-detail-page .spec-value,
+.tool-detail-page .spec-value a{
+  color:#202124;
+  font-size:16px;
+  line-height:1.65;
+  font-weight:500;
+  word-break:break-word;
+}
+.tool-detail-page .spec-value a{color:#176b9a}
+.tool-detail-page .reading-block p{
+  margin:0;
+  font-size:17px;
+  line-height:1.85;
+  color:#202124;
+}
+.tool-detail-page .step-flow{
+  display:grid;
+  gap:22px;
+}
+.tool-detail-page .step-card-technical{
+  border:1px solid #e2e8ed;
+  border-radius:24px;
+  padding:24px;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfcfd 100%);
+}
+.tool-detail-page .step-header{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+}
+.tool-detail-page .step-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:88px;
+  height:36px;
+  padding:0 14px;
+  border-radius:999px;
+  background:#2c7194;
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.tool-detail-page .step-card-technical h3{
+  margin:0;
+  text-align:left;
+  color:#202124;
+  font-size:24px;
+  font-weight:700;
+}
+.tool-detail-page .step-card-technical ol{
+  margin:0;
+  padding-left:22px;
+  color:#202124;
+}
+.tool-detail-page .step-card-technical li{
+  margin-bottom:10px;
+  font-size:16px;
+  line-height:1.75;
+}
+.tool-detail-page .step-card-technical a{
+  color:#176b9a;
+}
+.tool-detail-page .step-figure{
+  margin:20px 0 0;
+  border:1px solid #e2e8ed;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+}
+.tool-detail-page .step-figure img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.tool-detail-page .step-figure figcaption{
+  padding:12px 16px 14px;
+  border-top:1px solid #edf1f3;
+  color:#5f6368;
+  font-size:13px;
+  line-height:1.6;
+}
+.tool-detail-page .application-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.tool-detail-page .application-card{
+  border:1px solid #e2e8ed;
+  border-radius:22px;
+  padding:20px 20px 18px;
+  background:#f7fafc;
+}
+.tool-detail-page .application-card h3{
+  margin:0 0 8px;
+  text-align:left;
+  font-size:20px;
+  color:#2c7194;
+  font-weight:700;
+}
+.tool-detail-page .application-card p{
+  margin:0;
+  color:#202124;
+  font-size:15px;
+  line-height:1.7;
+}
+.tool-detail-page .two-column-panel{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.tool-detail-page .support-card{
+  border:1px solid #e2e8ed;
+  border-radius:22px;
+  padding:24px;
+  background:#fff;
+}
+.tool-detail-page .support-card-accent{
+  background:linear-gradient(180deg,#f2f6f8 0%,#ffffff 100%);
+  border-color:#d5e1e9;
+}
+.tool-detail-page .clean-list{
+  margin:0;
+  padding-left:22px;
+  color:#202124;
+}
+.tool-detail-page .clean-list li{
+  margin-bottom:10px;
+  font-size:16px;
+  line-height:1.75;
+}
+.tool-detail-page .tutorial-panel{
+  margin-bottom:0;
+}
+.tool-detail-page .tutorial-note{
+  margin:0;
+  color:#202124;
+  font-size:16px;
+  line-height:1.75;
+}
+@media (max-width:1080px){
+  .tool-detail-page .tool-hero,
+  .tool-detail-page .tool-panel,
+  .tool-detail-page .tool-anchor-nav{
+    max-width:100%;
+  }
+  .tool-detail-page .tool-hero{
+    grid-template-columns:1fr;
+    padding:28px 22px 26px;
+    border-radius:0;
+  }
+  .tool-detail-page .tool-anchor-nav,
+  .tool-detail-page .tool-panel{
+    padding-left:22px;
+    padding-right:22px;
+  }
+  .tool-detail-page .tool-panel{
+    border-radius:22px;
+  }
+}
+@media (max-width:780px){
+  .tool-detail-page .tech-spec-grid,
+  .tool-detail-page .application-grid,
+  .tool-detail-page .two-column-panel{
+    grid-template-columns:1fr;
+  }
+}
+@media (max-width:640px){
+  .tool-detail-page .tool-hero-content h1{
+    font-size:34px;
+  }
+  .tool-detail-page .tool-summary,
+  .tool-detail-page .reading-block p,
+  .tool-detail-page .step-card-technical li,
+  .tool-detail-page .clean-list li{
+    font-size:15px;
+  }
+  .tool-detail-page .section-heading h2{
+    font-size:26px;
+  }
+  .tool-detail-page .tool-anchor-nav,
+  .tool-detail-page .tool-panel{
+    padding-left:16px;
+    padding-right:16px;
+  }
+  .tool-detail-page .step-card-technical,
+  .tool-detail-page .support-card{
+    padding:18px;
+  }
+  .tool-detail-page .step-header{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+}
