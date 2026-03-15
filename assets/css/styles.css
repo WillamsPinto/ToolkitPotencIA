@@ -852,7 +852,7 @@ body.assistentes-page{
 .assistentes-page .sidebar{
   background:linear-gradient(180deg,#1f2023 0%,#1a1b1f 100%);
   border-right:none;
-  padding:68px 18px 24px;
+  padding:18px 0 26px;
   position:sticky;
   top:0;
   min-height:100vh;
@@ -860,37 +860,62 @@ body.assistentes-page{
   align-self:stretch;
 }
 .assistentes-page .brand{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:26px;
+  gap:12px;
   color:#fff;
-  font-size:18px;
+  font-size:17px;
   font-weight:700;
-  padding:0 18px 18px 18px;
-  margin:0 0 18px;
+  line-height:1.2;
+  padding:10px 24px 12px;
+  margin:0 0 28px;
 }
 .assistentes-page .brand img{
   width:36px;
   height:36px;
 }
-.assistentes-page nav{padding-right:6px;}
+.assistentes-page nav{padding:0 0 8px;}
 .assistentes-page nav details{margin:0 0 2px;}
 .assistentes-page nav summary,
 .assistentes-page nav a.nav-item,
 .assistentes-page nav .leaf-link{
   color:#fff;
   border-radius:0;
-  padding:9px 16px;
-  font-size:14px;
-  line-height:1.18;
-  font-weight:400;
+  padding-top:9px;
+  padding-bottom:9px;
+  font-size:13px;
+  line-height:1.42;
+  letter-spacing:0;
 }
-.assistentes-page nav summary{padding-right:30px;}
+.assistentes-page nav a.nav-item,
+.assistentes-page nav summary{
+  padding-left:24px;
+  padding-right:18px;
+}
+.assistentes-page .leaf-link{
+  padding-left:60px;
+  padding-right:16px;
+  font-size:12px;
+  line-height:1.5;
+}
+.assistentes-page nav summary{
+  position:relative;
+  padding-left:42px;
+  padding-right:16px;
+}
 .assistentes-page nav details > summary::after{
-  right:14px;
+  content:none;
+}
+.assistentes-page nav details > summary::before{
+  content:"▾";
+  position:absolute;
+  left:24px;
+  top:50%;
+  transform:translateY(-52%);
   color:#ffffff;
   font-size:11px;
+  line-height:1;
+}
+.assistentes-page nav details:not([open]) > summary::before{
+  content:"▸";
 }
 .assistentes-page nav .group{margin-left:0;}
 .assistentes-page nav .subgroup{margin-left:0;}
@@ -1019,6 +1044,142 @@ body.assistentes-page{
   color:#444;
   background:#f2f2f2;
 }
+
+/* Unified dark sidebar pattern for home, catalog and assistentes */
+.home-page .sidebar,
+.catalogo-home-page .sidebar,
+.assistentes-page .sidebar{
+  background:linear-gradient(180deg,#1f2024 0%,#191a1d 100%);
+  border-right:none;
+  padding:18px 0 26px;
+}
+.home-page .brand,
+.catalogo-home-page .brand,
+.assistentes-page .brand{
+  padding:10px 24px 12px;
+  margin:0 0 28px;
+  gap:12px;
+  font-size:17px;
+  font-weight:700;
+  line-height:1.2;
+  color:#fff;
+}
+.home-page .brand img,
+.catalogo-home-page .brand img,
+.assistentes-page .brand img{
+  width:36px;
+  height:36px;
+}
+.home-page nav,
+.catalogo-home-page nav,
+.assistentes-page nav{
+  padding:0 0 8px;
+}
+.home-page nav details,
+.catalogo-home-page nav details,
+.assistentes-page nav details{
+  margin:0 0 2px;
+}
+.home-page nav summary,
+.home-page nav a.nav-item,
+.home-page .leaf-link,
+.catalogo-home-page nav summary,
+.catalogo-home-page nav a.nav-item,
+.catalogo-home-page .leaf-link,
+.assistentes-page nav summary,
+.assistentes-page nav a.nav-item,
+.assistentes-page .leaf-link{
+  border-radius:0;
+  padding-top:9px;
+  padding-bottom:9px;
+  font-size:13px;
+  line-height:1.42;
+  letter-spacing:0;
+  color:#fff;
+}
+.home-page nav a.nav-item,
+.home-page nav summary,
+.catalogo-home-page nav a.nav-item,
+.catalogo-home-page nav summary,
+.assistentes-page nav a.nav-item,
+.assistentes-page nav summary{
+  padding-left:24px;
+  padding-right:18px;
+}
+.home-page .leaf-link,
+.catalogo-home-page .leaf-link,
+.assistentes-page .leaf-link{
+  padding-left:60px;
+  padding-right:16px;
+  font-size:12px;
+  line-height:1.5;
+}
+.home-page nav .group,
+.home-page nav .subgroup,
+.catalogo-home-page nav .group,
+.catalogo-home-page nav .subgroup,
+.assistentes-page nav .group,
+.assistentes-page nav .subgroup{
+  margin-left:0;
+}
+.home-page nav details > summary,
+.catalogo-home-page nav details > summary,
+.assistentes-page nav details > summary{
+  position:relative;
+  padding-left:42px;
+  padding-right:16px;
+}
+.home-page nav details > summary::after,
+.catalogo-home-page nav details > summary::after,
+.assistentes-page nav details > summary::after{
+  content:none;
+}
+.home-page nav details > summary::before,
+.catalogo-home-page nav details > summary::before,
+.assistentes-page nav details > summary::before{
+  content:"▾";
+  position:absolute;
+  left:24px;
+  top:50%;
+  transform:translateY(-52%);
+  color:#ffffff;
+  font-size:11px;
+  line-height:1;
+}
+.home-page nav details:not([open]) > summary::before,
+.catalogo-home-page nav details:not([open]) > summary::before,
+.assistentes-page nav details:not([open]) > summary::before{
+  content:"▸";
+}
+.home-page nav summary:hover,
+.home-page nav a.nav-item:hover,
+.home-page .leaf-link:hover,
+.catalogo-home-page nav summary:hover,
+.catalogo-home-page nav a.nav-item:hover,
+.catalogo-home-page .leaf-link:hover,
+.assistentes-page nav summary:hover,
+.assistentes-page nav a.nav-item:hover,
+.assistentes-page .leaf-link:hover{
+  background:rgba(255,255,255,.04);
+  color:#fff;
+}
+.home-page nav .active,
+.home-page nav .leaf-link.active,
+.home-page nav a.nav-item.active,
+.home-page nav summary.active,
+.catalogo-home-page nav .active,
+.catalogo-home-page nav .leaf-link.active,
+.catalogo-home-page nav a.nav-item.active,
+.catalogo-home-page nav summary.active,
+.assistentes-page nav .active,
+.assistentes-page nav .leaf-link.active,
+.assistentes-page nav a.nav-item.active,
+.assistentes-page nav summary.active{
+  background:rgba(255,255,255,.08);
+  color:#66c0ff;
+  font-weight:700;
+  box-shadow:inset 3px 0 0 #66c0ff;
+}
 @media (max-width:1080px){
   .assistentes-page .layout{grid-template-columns:1fr;}
   .assistentes-page .sidebar{
@@ -1028,7 +1189,7 @@ body.assistentes-page{
     width:min(86vw,340px);
     height:100dvh;
     min-height:0;
-    padding-top:20px;
+    padding-top:18px;
     transform:translateX(-100%);
     transition:transform .22s ease;
     box-shadow:0 8px 24px rgba(60,64,67,.24);
