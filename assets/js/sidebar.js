@@ -107,7 +107,7 @@
     sidebar.innerHTML = `
       <div class="search-icon" aria-hidden="true">⌕</div>
       <a href="${homeHref}" class="brand">
-        <img src="${LOGO}" alt="Logo PotencIA" />
+        <img src="${resolveHref(basePath, LOGO)}" alt="Logo PotencIA" />
         <span>PotencIA</span>
       </a>
       <nav aria-label="Navegação do site">
