@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
+<body class="home-page catalogo-home-page">
   <header class="mobile-header">
     <div class="mobile-brand">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
+      <img src="../assets/logo_icon.png" alt="Logo PotencIA" />
       <span>PotencIA</span>
     </div>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-sidebar">☰</button>
@@ -23,42 +23,181 @@
     <aside class="sidebar" id="site-sidebar" data-sidebar-source="shared" data-base-path=".." data-current-page="catalogo"></aside>
 
     <main class="content">
-      <div class="page">
-        <section class="hero tight">
-          <h1>Catálogo de Ferramentas</h1>
-        </section>
+      <div class="page catalogo-page">
+        <section class="catalogo-hero-home" aria-labelledby="catalogo-title">
+          <p class="catalogo-eyebrow">Assistentes</p>
+          <h1 id="catalogo-title">Catálogo de Ferramentas</h1>
+          <p class="lead">Esta página reúne as ferramentas apresentadas no site PotencIA, organizadas em três frentes de uso pedagógico: planejamento, mediação e avaliação/reflexão da aprendizagem.</p>
 
-        <section class="tool-list">
-          <div class="tool-section">
-            <h3><a href="planejamento.html">Assistentes de IA para Planejamento Pedagógico</a></h3>
-            <p>Ferramentas voltadas ao apoio ao educador na organização de aulas, ideias, apresentações e propostas didáticas.</p>
-            <div class="badges">
-              <a class="badge" href="chatgpt.html">ChatGPT</a><a class="badge" href="gemini.html">Gemini</a><a class="badge" href="ideamap-ai.html">Ideamap AI</a>
-              <a class="badge" href="phind.html">Phind</a><a class="badge" href="magicschool-ai.html">MagicSchool AI</a><a class="badge" href="slidesai.html">SlidesAI</a><a class="badge" href="gamma-app.html">Gamma.app</a>
+          <div class="catalogo-stats" aria-label="Resumo do catálogo">
+            <div class="catalogo-stat">
+              <strong>25</strong>
+              <span>ferramentas</span>
             </div>
-          </div>
-
-          <div class="tool-section">
-            <h3><a href="mediacao.html">Assistentes de IA para Mediação Pedagógica</a></h3>
-            <p>Ferramentas para criação de imagens, vídeos, narrações, ilustrações e outros recursos para tornar a mediação em sala mais visual, dinâmica e interativa.</p>
-            <div class="badges">
-              <a class="badge" href="canva.html">Canva</a><a class="badge" href="adobe-firefly.html">Adobe Firefly</a><a class="badge" href="leonardo-ai.html">Leonador AI</a>
-              <a class="badge" href="bing-image-creator.html">Bing Image Creator</a><a class="badge" href="imagefx.html">ImageFX</a><a class="badge" href="autodraw.html">AutoDraw</a>
-              <a class="badge" href="invideo-ai.html">Invideo AI</a><a class="badge" href="vidnoz-ai.html">Vidnoz AI</a><a class="badge" href="ai-song-generator.html">AI Song Generator</a>
-              <a class="badge" href="suno-ai.html">Suno AI</a><a class="badge" href="animated-drawings.html">Animated Drawings</a><a class="badge" href="murf-ai.html">Murf.ai</a><a class="badge" href="khanmigo-beta.html">Khanmigo (beta)</a>
+            <div class="catalogo-stat">
+              <strong>3</strong>
+              <span>categorias</span>
             </div>
-          </div>
-
-          <div class="tool-section">
-            <h3><a href="avaliacao.html">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</a></h3>
-            <p>Ferramentas que apoiam leitura, revisão, análise de conteúdo, acompanhamento e reflexão crítica sobre textos e respostas.</p>
-            <div class="badges">
-              <a class="badge" href="quillbot.html">QuillBot</a><a class="badge" href="max-ai.html">Max AI</a><a class="badge" href="liner-ai.html">Liner AI</a><a class="badge" href="chatpdf.html">ChatPDF</a><a class="badge" href="languagetool.html">LanguageTool</a>
+            <div class="catalogo-stat">
+              <strong>1</strong>
+              <span>catálogo central</span>
             </div>
           </div>
         </section>
 
-        <footer class="footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
+        <section class="home-mission catalogo-intro-home">
+          <h2>Como o catálogo está organizado</h2>
+          <div class="catalogo-summary-grid">
+            <article class="catalogo-summary-card">
+              <h3><a href="planejamento.html">Planejamento Pedagógico</a></h3>
+              <p>Ferramentas voltadas à organização de ideias, elaboração de planos, criação de apresentações e apoio ao desenho de atividades didáticas.</p>
+            </article>
+            <article class="catalogo-summary-card">
+              <h3><a href="mediacao.html">Mediação Pedagógica</a></h3>
+              <p>Ferramentas para produção de imagens, vídeos, áudios, ilustrações e outros recursos que tornam a aula mais visual, dinâmica e interativa.</p>
+            </article>
+            <article class="catalogo-summary-card">
+              <h3><a href="avaliacao.html">Avaliação e Reflexão da Aprendizagem</a></h3>
+              <p>Ferramentas de leitura, revisão, análise, síntese e apoio à reflexão crítica sobre textos, produções e materiais de estudo.</p>
+            </article>
+          </div>
+
+        </section>
+
+        <section class="home-highlight catalogo-category-home" id="planejamento">
+          <div class="catalogo-category-header">
+            <div>
+              <p class="catalogo-category-label">Categoria 1</p>
+              <h2>Assistentes de IA para Planejamento Pedagógico</h2>
+            </div>
+            <a class="cta" href="planejamento.html">Ver categoria</a>
+          </div>
+          <p class="catalogo-category-intro">Reúne ferramentas úteis para estruturar aulas, organizar conteúdos, gerar apresentações e apoiar o planejamento didático do professor.</p>
+
+          <div class="catalogo-tool-grid">
+            <article class="catalogo-tool-card">
+              <h3><a href="chatgpt.html">ChatGPT</a></h3>
+              <p>Geração de ideias, correção de textos e sugestão de planos de aula, imagens e materiais pedagógicos.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="gemini.html">Gemini</a></h3>
+              <p>Apoia a criação de textos, ideias, imagens e propostas de aula com interação em linguagem natural.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="ideamap-ai.html">Ideamap AI</a></h3>
+              <p>Auxilia na organização visual de conteúdos, brainstormings e conexões conceituais para o planejamento pedagógico.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="phind.html">Phind</a></h3>
+              <p>Apoia a busca por soluções técnicas, recursos e ferramentas que podem enriquecer o planejamento docente.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="magicschool-ai.html">MagicSchool AI</a></h3>
+              <p>Ajuda na elaboração de planos de aula, avaliações, materiais personalizados e outras rotinas do trabalho docente.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="slidesai.html">SlidesAI</a></h3>
+              <p>Converte textos em apresentações de forma rápida, apoiando a preparação de aulas expositivas e seminários.</p>
+            </article>
+            <article class="catalogo-tool-card">
+              <h3><a href="gamma-app.html">Gamma.app</a></h3>
+              <p>Permite criar apresentações dinâmicas e materiais visuais com apoio de IA.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="home-mission catalogo-category-home catalogo-category-alt" id="mediacao">
+          <div class="catalogo-category-header">
+            <div>
+              <p class="catalogo-category-label">Categoria 2</p>
+              <h2>Assistentes de IA para Mediação Pedagógica</h2>
+            </div>
+            <a class="cta" href="mediacao.html">Ver categoria</a>
+          </div>
+          <p class="catalogo-category-intro">Reúne ferramentas para criação de recursos visuais, sonoros e audiovisuais que ampliam as possibilidades de explicação, demonstração e interação em sala de aula.</p>
+		</br>
+          <div class="catalogo-tool-grid">
+            <article class="catalogo-tool-card">
+				<h3><a href="canva.html">Canva</a></h3>
+				<p>Criação de materiais visuais, apresentações e recursos gráficos com apoio de IA.</p>
+			</article>
+		
+            <article class="catalogo-tool-card">
+				<h3><a href="adobe-firefly.html">Adobe Firefly</a></h3>
+				<p>Apoia a produção de representações visuais para explicar conceitos e enriquecer materiais didáticos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="leonardo-ai.html">Leonardo AI</a></h3>
+				<p>Permite criar imagens e ilustrações para apoiar a aprendizagem e tornar a mediação mais visual.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="bing-image-creator.html">Bing Image Creator</a></h3>
+				<p>Gera imagens a partir de descrições textuais para complementar explicações e atividades.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="imagefx.html">ImageFX</a></h3>
+				<p>Auxilia na criação de imagens relacionadas aos conteúdos trabalhados, ampliando o engajamento dos estudantes.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="autodraw.html">AutoDraw</a></h3>
+				<p>Facilita a criação de desenhos e esquemas visuais que podem ser usados em materiais pedagógicos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="invideo-ai.html">Invideo AI</a></h3>
+				<p>Ajuda o professor a produzir vídeos educativos para aulas presenciais ou remotas.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="vidnoz-ai.html">Vidnoz AI</a></h3>
+				<p>Permite criar vídeos com avatares e narração automatizada para apresentação dinâmica de conteúdos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="ai-song-generator.html">AI Song Generator</a></h3>
+				<p>Possibilita compor músicas educativas personalizadas para reforço lúdico dos conteúdos curriculares.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="suno-ai.html">Suno AI</a></h3>
+				<p>Cria músicas personalizadas que podem apoiar atividades criativas e memorização de conteúdos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="animated-drawings.html">Animated Drawings</a></h3>
+				<p>Transforma desenhos em animações digitais, favorecendo a criatividade e a expressão dos alunos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="murf-ai.html">Murf.ai</a></h3>
+				<p>Gera narrações e áudios que podem apoiar a acessibilidade e a mediação de conteúdos.</p>
+			</article>
+            <article class="catalogo-tool-card">
+				<h3><a href="khanmigo-beta.html">Khanmigo (beta)</a></h3>
+				<p>Atua como apoio tutorial para reforço escolar e acompanhamento da aprendizagem.</p>
+			</article>
+          </div>
+        </section>
+
+        <section class="home-highlight catalogo-category-home" id="avaliacao">
+          <div class="catalogo-category-header">
+            <div>
+              <p class="catalogo-category-label">Categoria 3</p>
+              <h2>Assistentes de IA para Avaliação e Reflexão da Aprendizagem</h2>
+            </div>
+            <a class="cta" href="avaliacao.html">Ver categoria</a>
+          </div>
+          <p class="catalogo-category-intro">Reúne ferramentas úteis para revisar textos, analisar documentos, sintetizar informações e apoiar processos de acompanhamento e reflexão sobre a aprendizagem.</p>
+
+          <div class="catalogo-tool-grid">
+            <article class="catalogo-tool-card"><h3><a href="quillbot.html">QuillBot</a></h3>
+			<p>Auxilia na reformulação de textos, correção gramatical e apoio à produção de materiais e avaliações.</p></article>
+            <article class="catalogo-tool-card"><h3><a href="max-ai.html">Max AI</a></h3>
+			<p>Apoia resumos, correções, elaboração de conteúdos e automatização de tarefas escritas.</p></article>
+            <article class="catalogo-tool-card"><h3><a href="liner-ai.html">Liner AI</a></h3>
+			<p>Favorece a pesquisa de conteúdos confiáveis e a organização de informações para estudo e revisão.</p></article>
+            <article class="catalogo-tool-card"><h3><a href="chatpdf.html">ChatPDF</a></h3>
+			<p>Permite analisar documentos extensos, extrair informações relevantes e compreender materiais em PDF com maior agilidade.</p></article>
+            <article class="catalogo-tool-card"><h3><a href="languagetool.html">LanguageTool</a></h3>
+			<p>Auxilia na revisão ortográfica e gramatical de textos, atividades e produções escritas.</p></article>
+          </div>
+        </section>
+
+        <footer class="home-footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
       </div>
     </main>
   </div>
