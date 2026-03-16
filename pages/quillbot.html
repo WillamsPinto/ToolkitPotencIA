@@ -9,196 +9,202 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
+<body class="assistentes-page tool-detail-page">
   <header class="mobile-header">
     <div class="mobile-brand">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
+      <img src="../assets/logo_icon.png" alt="Logo PotencIA" />
       <span>PotencIA</span>
     </div>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-sidebar">☰</button>
   </header>
-
   <div class="sidebar-backdrop"></div>
+
   <div class="layout">
     <aside class="sidebar" id="site-sidebar" data-sidebar-source="shared" data-base-path=".." data-current-page="quillbot"></aside>
 
     <main class="content">
       <div class="page">
-        <section class="hero tight">
-          <h1>QuillBot</h1>
-          <p class="lead">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</p>
+        <section class="tool-hero" aria-labelledby="quillbot-title">
+          <div class="tool-hero-media">
+            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ3JJbMCRbVdJ0HWWr-xvD-bjzr7Roea1r8s1SDHo_2C-FWHyy3o2mUrifZNYRiNrIbep5X_SH46UF7N6atETzUWK59_YFNA3uwYh_Wp7dBUbd9-6Iy3b9vGXNTsqQAGjNs55nqCHCK_vFR0pq6G2NtdbRO3zcCzY6xAyfUwb8ULMkgYMdPSIJsccdxpaT-yHTpo22f4pGs-5q8Bg2CVsi4E4avrIksUZ44ZZs=w1280" alt="Tela de acesso do QuillBot" />
+          </div>
+          <div class="tool-hero-content">
+            <h1 id="quillbot-title">QuillBot</h1>
+            <p class="tool-summary">Auxiliar o professor na reformulação de textos, correção gramatical e verificação de plágio, facilitando a criação de materiais didáticos e avaliações.</p>
+
+            <div class="tool-meta-strip">
+              <span>Parafraseamento e Correção Gramatical</span>
+              <span>Freemium</span>
+              <span>Dificuldade: Baixa</span>
+              <span>Disciplina: Todas</span>
+            </div>
+          </div>
         </section>
 
-        <section class="tight">
-          <div class="cards">
-            <div class="info-card">
-              <h3>Informações</h3>
-              <p>Ferramenta de Parafraseamento e Correção Gramatical</p>
-              <div class="badges">
-                <span class="badge">Freemium</span>
-                <span class="badge">Dificuldade: Baixa</span>
-                <span class="badge">Disciplina: Todas</span>
+        <br/>
+
+        <section id="ficha-tecnica" class="tool-panel">
+          <div class="section-heading">
+            <h2>Ficha técnica</h2>
+          </div>
+
+          <div class="tech-spec-grid">
+            <article class="spec-card">
+              <span class="spec-label">Tipo de IA</span>
+              <strong class="spec-value">Ferramenta de Parafraseamento e Correção Gramatical</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Objetivo pedagógico</span>
+              <strong class="spec-value">Auxiliar o professor na reformulação de textos, correção gramatical e verificação de plágio, facilitando a criação de materiais didáticos e avaliações.</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Disciplina</span>
+              <strong class="spec-value">Todas</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Aplicação no trabalho docente</span>
+              <strong class="spec-value">Criação de material pedagógico, correção de atividades, planejamento de aula.</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Exemplo de uso em sala de aula</span>
+              <strong class="spec-value">Reescrever enunciados de atividades para diferentes níveis de dificuldade e verificar a originalidade de textos produzidos.</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Dificuldade</span>
+              <strong class="spec-value">Baixa</strong>
+            </article>
+            <article class="spec-card">
+              <span class="spec-label">Modelo de acesso</span>
+              <strong class="spec-value">Freemium</strong>
+            </article>
+            <article class="spec-card accent">
+              <span class="spec-label">Link de acesso</span>
+              <strong class="spec-value"><a href="https://quillbot.com/pt/" target="_blank" rel="noopener noreferrer">https://quillbot.com/pt/</a></strong>
+            </article>
+          </div>
+          <br/>
+        </section>
+
+        <section id="visao-geral" class="tool-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Visão geral</p>
+            <h2>O que é o QuillBot?</h2>
+          </div>
+          <div class="reading-block">
+            <p>O QuillBot é uma plataforma de escrita assistida por IA que ajuda usuários a melhorar a clareza, fluidez e qualidade de seus textos.</p>
+            <ul class="clean-list">
+              <li>Parafraseador: reescreve frases ou parágrafos mantendo o significado original.</li>
+              <li>Corretor gramatical: identifica e corrige erros gramaticais, ortográficos e de pontuação.</li>
+              <li>Resumidor de textos: gera resumos concisos de textos longos.</li>
+              <li>Tradutor: traduz textos entre diversos idiomas.</li>
+              <li>Gerador de citações: cria referências bibliográficas em estilos como APA, MLA e Chicago.</li>
+            </ul>
+            <p>A ferramenta está disponível em português e pode ser acessada diretamente pelo navegador.</p>
+          </div>
+        </section>
+
+        <section id="como-utilizar" class="tool-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Fluxo de uso</p>
+            <h2>Como utilizar o QuillBot</h2>
+          </div>
+
+          <div class="step-flow">
+            <article class="step-card-technical">
+              <div class="step-header">
+                <span class="step-number">Etapa 1</span>
+                <h3>Acessando o QuillBot</h3>
               </div>
-            </div>
-            <a class="card" href="https://quillbot.com/pt/" target="_blank" rel="noopener noreferrer" aria-label="Acessar QuillBot">
-              <img src="../assets/avaliacao/QuillBot.png" alt="QuillBot" />
-              <div class="card-title">Link de Acesso</div>
-            </a>
-          </div>
-        </section>
-
-        <section class="tight">
-          <div class="detail-grid">
-            <div class="detail-item"><strong>Tipo de IA</strong><span>Ferramenta de Parafraseamento e Correção Gramatical</span></div>
-            <div class="detail-item"><strong>Objetivo Pedagógico</strong><span>Auxiliar o professor na reformulação de textos, correção gramatical e verificação de plágio, facilitando a criação de materiais didáticos e avaliações.</span></div>
-            <div class="detail-item"><strong>Disciplina</strong><span>Todas</span></div>
-            <div class="detail-item"><strong>Aplicação no Trabalho Docente</strong><span>Criação de material pedagógico, Correção de atividades, Planejamento de aula.</span></div>
-            <div class="detail-item"><strong>Exemplo de Uso em Sala de Aula</strong><span>Reescrever enunciados de atividades para diferentes níveis de dificuldade e verificar a originalidade de textos produzidos.</span></div>
-            <div class="detail-item"><strong>Dificuldade</strong><span>Baixa</span></div>
-            <div class="detail-item"><strong>Modelo de Acesso</strong><span>Freemium</span></div>
-            <div class="detail-item"><strong>Link de Acesso</strong><span><a href="https://quillbot.com/pt/" target="_blank" rel="noopener noreferrer">https://quillbot.com/pt/</a></span></div>
-          </div>
-          <div class="tool-actions">
-            <a class="cta" href="https://quillbot.com/pt-BR" target="_blank" rel="noopener noreferrer">Abrir ferramenta</a>
-            <a class="cta" href="avaliacao.html">Voltar para a categoria</a>
-          </div>
-        </section>
-
-        <section class="text-block tight">
-          <h3>O que é o QuillBot?</h3>
-          <p>O QuillBot é uma plataforma de escrita assistida por IA que ajuda usuários a melhorar a clareza, fluidez e qualidade de seus textos. Entre suas principais funcionalidades estão:</p>
-          <ul>
-            <li>Parafraseador: Reescreve frases ou parágrafos mantendo o significado original.</li>
-            <li>Corretor Gramatical: Identifica e corrige erros gramaticais, ortográficos e de pontuação.</li>
-            <li>Resumidor de Textos: Gera resumos concisos de textos longos.</li>
-            <li>Tradutor: Traduz textos entre diversos idiomas.</li>
-            <li>Gerador de Citações: Cria referências bibliográficas em estilos como APA, MLA e Chicago.</li>
-          </ul>
-          <p>A ferramenta está disponível em português e pode ser acessada diretamente pelo navegador.</p>
-        </section>
-
-        <section class="tight">
-          <h2>Etapa 1: Acessando o QuillBot</h2>
-          <div class="tool-list">
-            <div class="tool-section">
-              <h3>Como acessar</h3>
-              <ol class="step-list">
-                <li>Acesse o site oficial: <a href="https://quillbot.com/pt-BR" target="_blank" rel="noopener noreferrer">https://quillbot.com/pt-BR</a></li>
-                <li>Crie uma conta gratuita.
-                  <ul>
-                    <li>Clique em "Registrar-se" e insira seu e-mail ou utilize uma conta do Google para se cadastrar.</li>
-                  </ul>
-                </li>
-                <li>Faça login.
-                  <ul>
-                    <li>Após o cadastro, entre na plataforma com suas credenciais para acessar todos os recursos disponíveis.</li>
-                  </ul>
-                </li>
+              <ol>
+                <li>Acesse o site oficial: https://quillbot.com/pt-BR.</li>
+                <li>Crie uma conta gratuita.</li>
+                <li>Clique em “Registrar-se” e insira seu e-mail ou utilize uma conta do Google para se cadastrar.</li>
+                <li>Após o cadastro, entre na plataforma com suas credenciais para acessar todos os recursos disponíveis.</li>
               </ol>
-            </div>
-          </div>
+              <figure class="step-figure">
+                <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ3JJbMCRbVdJ0HWWr-xvD-bjzr7Roea1r8s1SDHo_2C-FWHyy3o2mUrifZNYRiNrIbep5X_SH46UF7N6atETzUWK59_YFNA3uwYh_Wp7dBUbd9-6Iy3b9vGXNTsqQAGjNs55nqCHCK_vFR0pq6G2NtdbRO3zcCzY6xAyfUwb8ULMkgYMdPSIJsccdxpaT-yHTpo22f4pGs-5q8Bg2CVsi4E4avrIksUZ44ZZs=w1280" alt="Tela de acesso do QuillBot" />
+                <figcaption>Etapa de acesso e cadastro na plataforma QuillBot.</figcaption>
+              </figure>
+            </article>
 
-          <div class="cards">
-            <div class="card">
-              <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ3JJbMCRbVdJ0HWWr-xvD-bjzr7Roea1r8s1SDHo_2C-FWHyy3o2mUrifZNYRiNrIbep5X_SH46UF7N6atETzUWK59_YFNA3uwYh_Wp7dBUbd9-6Iy3b9vGXNTsqQAGjNs55nqCHCK_vFR0pq6G2NtdbRO3zcCzY6xAyfUwb8ULMkgYMdPSIJsccdxpaT-yHTpo22f4pGs-5q8Bg2CVsi4E4avrIksUZ44ZZs=w1280" alt="Etapa 1: Acessando o QuillBot" />
-              <div class="card-title">Etapa 1: Acessando o QuillBot</div>
-            </div>
-          </div>
-        </section>
+            <article class="step-card-technical">
+              <div class="step-header">
+                <span class="step-number">Etapa 2</span>
+                <h3>Utilizando os recursos do QuillBot</h3>
+              </div>
 
-        <section class="tight">
-          <h2>Etapa 2: Utilizando os Recursos do QuillBot</h2>
-          <div class="tool-list">
-            <div class="tool-section">
-              <h3>1. Parafraseador</h3>
-              <p><strong>Como usar:</strong></p>
-              <ol class="step-list">
+              <h4>1. Parafraseador</h4>
+              <ol>
                 <li>Digite ou cole o texto que deseja parafrasear na caixa de entrada.</li>
                 <li>Escolha o modo de parafraseamento que melhor se adapta às suas necessidades: Padrão, Fluidez, Formal, Acadêmico, Simples, Criativo, Expansivo ou Personalizado.</li>
-                <li>Clique em "Parafrasear" e aguarde a reformulação do texto.</li>
+                <li>Clique em “Parafrasear” e aguarde a reformulação do texto.</li>
               </ol>
-              <p><strong>Dicas:</strong></p>
-              <ul>
-                <li>Os diferentes modos oferecem variações no estilo e complexidade do texto.</li>
-                <li>Você pode ajustar o nível de sinônimos para controlar a quantidade de alterações no texto.</li>
-              </ul>
-            </div>
+              <p><strong>Dicas:</strong> os diferentes modos oferecem variações no estilo e complexidade do texto. Você pode ajustar o nível de sinônimos para controlar a quantidade de alterações no texto.</p>
 
-            <div class="tool-section">
-              <h3>2. Corretor Gramatical</h3>
-              <p><strong>Como usar:</strong></p>
-              <ol class="step-list">
+              <h4>2. Corretor Gramatical</h4>
+              <ol>
                 <li>Acesse a ferramenta de correção gramatical.</li>
                 <li>Cole o texto que deseja revisar.</li>
                 <li>O QuillBot identificará e sugerirá correções para erros gramaticais, ortográficos e de pontuação.</li>
               </ol>
-              <p><strong>Dicas:</strong></p>
-              <ul>
-                <li>Utilize essa ferramenta para revisar trabalhos acadêmicos, e-mails profissionais e outros documentos importantes.</li>
-              </ul>
-            </div>
+              <p><strong>Dicas:</strong> utilize essa ferramenta para revisar trabalhos acadêmicos, e-mails profissionais e outros documentos importantes.</p>
 
-            <div class="tool-section">
-              <h3>3. Resumidor de Textos</h3>
-              <p><strong>Como usar:</strong></p>
-              <ol class="step-list">
+              <h4>3. Resumidor de Textos</h4>
+              <ol>
                 <li>Acesse a ferramenta de resumo.</li>
                 <li>Cole o texto que deseja resumir.</li>
                 <li>Escolha entre os modos de resumo em parágrafo ou com marcadores.</li>
-                <li>Clique em "Resumir" para obter uma versão condensada do texto.</li>
+                <li>Clique em “Resumir” para obter uma versão condensada do texto.</li>
               </ol>
-              <p><strong>Dicas:</strong></p>
-              <ul>
-                <li>Ideal para resumir artigos, relatórios e textos longos de forma rápida.</li>
-              </ul>
-            </div>
+              <p><strong>Dicas:</strong> ideal para resumir artigos, relatórios e textos longos de forma rápida.</p>
 
-            <div class="tool-section">
-              <h3>4. Tradutor</h3>
-              <p><strong>Como usar:</strong></p>
-              <ol class="step-list">
+              <h4>4. Tradutor</h4>
+              <ol>
                 <li>Acesse a ferramenta de tradução.</li>
                 <li>Cole o texto que deseja traduzir.</li>
                 <li>Selecione o idioma de origem e o idioma de destino.</li>
-                <li>Clique em "Traduzir" para obter a versão no idioma desejado.</li>
+                <li>Clique em “Traduzir” para obter a versão no idioma desejado.</li>
               </ol>
-              <p><strong>Dicas:</strong></p>
-              <ul>
-                <li>Suporta mais de 50 idiomas, incluindo português, inglês, espanhol, francês e alemão.</li>
-              </ul>
-            </div>
+              <p><strong>Dicas:</strong> suporta mais de 50 idiomas, incluindo português, inglês, espanhol, francês e alemão.</p>
 
-            <div class="tool-section">
-              <h3>5. Gerador de Citações</h3>
-              <p><strong>Como usar:</strong></p>
-              <ol class="step-list">
+              <h4>5. Gerador de Citações</h4>
+              <ol>
                 <li>Acesse a ferramenta de geração de citações.</li>
                 <li>Escolha o estilo de citação desejado: APA, MLA, Chicago, entre outros.</li>
-                <li>Insira as informações da fonte e clique em "Gerar Citação".</li>
+                <li>Insira as informações da fonte e clique em “Gerar Citação”.</li>
               </ol>
-              <p><strong>Dicas:</strong></p>
-              <ul>
-                <li>Você pode copiar a citação gerada ou exportá-la para um documento.</li>
-                <li>Ideal para trabalhos acadêmicos e pesquisas.</li>
-              </ul>
-            </div>
-          </div>
+              <p><strong>Dicas:</strong> você pode copiar a citação gerada ou exportá-la para um documento. Ideal para trabalhos acadêmicos e pesquisas.</p>
 
-          <div class="cards">
-            <div class="card">
-              <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRoxqqSX5Dg-mZ4yu-CA9cnJs1kpOvaminBDrc2ncE0n97Uol6drXYB2ezGqpJlaFxbFNjgaRAbGSFTGSIMIoONU0SAIPmWzrnDwAD_jOBGPf_Sbom8az9BVSP7sI2IYxImsom1V3muOYR3_865En1fn7p25ggwr27FpYV9ua5EHDRSnV-73Levuqp8ur20asQYo1ovBcYnRaN_X7tE6TJWcuWnXYn4qsApGwQ=w1280" alt="Etapa 2: Utilizando os Recursos do QuillBot" />
-              <div class="card-title">Etapa 2: Utilizando os Recursos do QuillBot</div>
-            </div>
+              <figure class="step-figure">
+                <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRoxqqSX5Dg-mZ4yu-CA9cnJs1kpOvaminBDrc2ncE0n97Uol6drXYB2ezGqpJlaFxbFNjgaRAbGSFTGSIMIoONU0SAIPmWzrnDwAD_jOBGPf_Sbom8az9BVSP7sI2IYxImsom1V3muOYR3_865En1fn7p25ggwr27FpYV9ua5EHDRSnV-73Levuqp8ur20asQYo1ovBcYnRaN_X7tE6TJWcuWnXYn4qsApGwQ=w1280" alt="Recursos disponíveis no QuillBot" />
+                <figcaption>Recursos do QuillBot para apoio à escrita, revisão e produção acadêmica.</figcaption>
+              </figure>
+            </article>
           </div>
         </section>
 
-        <section class="tight">
-          <h2>Tutorial em Vídeo</h2>
-          <div class="callout">
-            A página de referência apresenta a seção “Tutorial em Vídeo”, mas o endereço direto do vídeo não está exposto no conteúdo acessível da página.
+        <section id="dicas" class="tool-panel tips-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Boas práticas</p>
+            <h2>Dicas adicionais</h2>
           </div>
-          <div class="cta-wrap">
-            <a class="cta" href="https://sites.google.com/view/toolkitpotencia/assistentes/assistentes-de-ia-para-avalia%C3%A7%C3%A3o-e-reflex%C3%A3o-da-aprendizagem/quillbot?authuser=0" target="_blank" rel="noopener noreferrer">Abrir página de referência</a>
+          <article class="reading-card">
+            <ul class="clean-list">
+              <li>Os modos de parafraseamento permitem adequar o texto a diferentes níveis de formalidade e complexidade.</li>
+              <li>O corretor gramatical pode apoiar a revisão de materiais didáticos, avaliações e comunicações profissionais.</li>
+              <li>O gerador de citações é útil para trabalhos acadêmicos e pesquisas.</li>
+            </ul>
+          </article>
+          <br/>
+        </section>
+
+        <section class="tool-panel tutorial-panel">
+          <div class="section-heading compact">
+            <h2>Tutorial em Vídeo</h2>
+            <div class="reading-block">
+              <p>A página de referência apresenta a seção “Tutorial em Vídeo”, mas o endereço direto do vídeo não está exposto no conteúdo acessível da página. Por isso, foi mantida apenas a referência original, sem criar um embed inexistente.</p>
+              <p><a href="https://sites.google.com/view/toolkitpotencia/assistentes/assistentes-de-ia-para-avalia%C3%A7%C3%A3o-e-reflex%C3%A3o-da-aprendizagem/quillbot?authuser=0" target="_blank" rel="noopener noreferrer">Abrir página de referência</a></p>
+            </div>
           </div>
         </section>
 
