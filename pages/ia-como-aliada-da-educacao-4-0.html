@@ -8,6 +8,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .comparison-table-section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    .comparison-table th, .comparison-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    .comparison-table th {
+      background-color: #e9ecef;
+    }
+
+
+  </style>
 </head>
 <body class="assistentes-page">
   <header class="mobile-header">
@@ -25,7 +48,7 @@
     <main class="content">
       <div class="page">
         <section class="assistentes-hero" aria-labelledby="ia-aliada-title">
-          <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSJCEe2OQ9rpUbFRbizLBkxBq0kH6eBPTNdfn2PWfeAnrTjUAlgEYH71gS0RvAqm7UusHi_luTAcvn82ORpgxV0s8X0sx9ASJ2hTyYPY4rBP9lwZwcxeR4jKGcBVhVxoH4W8sUdZdV_gNm4nAHVowTkXO7kba4bs-umbzt-mjgbLkfpbmNmKT6E53Y=w1280" alt="Inteligência Artificial como Aliada da Educação 4.0" />
+          <img src="../assets/assistente_orientacao/ia_como_aliada/background.png" alt="Inteligência Artificial como Aliada da Educação 4.0" style="opacity: 0.5;" />
           <div class="hero-overlay">
             <h1 id="ia-aliada-title">Inteligência Artificial como Aliada da Educação 4.0</h1>
           </div>
@@ -67,20 +90,35 @@
           <p>A IAG utiliza arquiteturas avançadas, como Transformers e modelos de linguagem de grande escala (LLMs), capazes de produzir conteúdos coerentes e contextualmente adequados.</p>
         </section>
 
-        <section class="full-banner">Diferença entre IA e IAG</section>
-
-        <section class="categories content-section">
-          <article class="category-block">
-            <h3 class="category-title dot-green">Inteligência Artificial (IA)</h3>
-            <p>Desenvolve sistemas capazes de reconhecer padrões, classificar informações, prever resultados e apoiar decisões.</p>
-          </article>
-
-          <article class="category-block">
-            <h3 class="category-title dot-blue">Inteligência Artificial Generativa (IAG)</h3>
-            <p>É voltada para a criação de novos conteúdos, gerando textos, imagens, áudios, códigos ou vídeos a partir de padrões aprendidos durante o treinamento.</p>
-          </article>
+        <section class="categories content-section comparison-table-section">
+          <h2>Diferença entre IA e IAG</h2>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Inteligência Artificial</th>
+                <th>Inteligência Artificial Generativa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Analisa, classifica e prevê</td>
+                <td>Cria e produz novos conteúdos</td>
+              </tr>
+              <tr>
+                <td>Foco em decisão e reconhecimento de padrões</td>
+                <td>Foco em geração de texto, imagem, áudio, código</td>
+              </tr>
+              <tr>
+                <td>Pode não gerar conteúdo novo</td>
+                <td>Sempre gera algo novo a partir de padrões aprendidos</td>
+              </tr>
+              <tr>
+                <td>Campo amplo</td>
+                <td>Subárea específica da IA</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-
         <section class="content-section content-section-gap">
           <h2>O papel da IA na Educação 4.0</h2>
           <p>A Inteligência Artificial desempenha um papel estratégico no apoio à inovação pedagógica, permitindo:</p>
@@ -94,14 +132,63 @@
 
         <section class="content-section content-section-gap">
           <h2>Benefícios da IA para Educadores</h2>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Aplicação</th>
+                <th>Benefício</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Criação de atividades</td>
+                <td>Agilidade, diversidade e personalização</td>
+              </tr>
+              <tr>
+                <td>Planejamento de aulas</td>
+                <td>Organização e alinhamento com a BNCC</td>
+              </tr>
+              <tr>
+                <td>Diagnóstico de aprendizagem</td>
+                <td>Feedback imediato com base em evidências</td>
+              </tr>
+              <tr>
+                <td>Adaptação ao perfil do aluno</td>
+                <td>Personalização para necessidades específicas</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <section class="content-section content-section-gap">
           <h2>Exemplo Prático: Projeto Interdisciplinar com IA</h2>
           <p>Turma do 8º ano desenvolve um projeto sobre sustentabilidade com apoio da IA generativa.</p>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Pilar</th>
+                <th>Como a IA contribui</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Educação (Conhecimento)</strong></td>
+                <td>Apoio à pesquisa, criação de mapas mentais e resumos sobre sustentabilidade.</td>
+              </tr>
+              <tr>
+                <td><strong>Atitude (Comportamento)</strong></td>
+                <td>Simulações e propostas de ações locais para reduzir o impacto ambiental.</td>
+              </tr>
+              <tr>
+                <td><strong>Valor (Ética e Propósito)</strong></td>
+                <td>Debates com a IA sobre ética ambiental e textos reflexivos com propósito social.</td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
         </section>
 
-        <section class="about-block content-section about-gap">
+        <section class="content-section content-section-gap">
           <h2>Formação Docente e Transformação Digital</h2>
           <p>Para aproveitar o potencial da IA na educação, é essencial que os educadores:</p>
           <ul>
@@ -116,9 +203,9 @@
           <h2>Quer se aprofundar?</h2>
           <p>Para explorar com mais profundidade o uso da IA em contextos de ensino e aprendizagem, acesse o <a href="https://unesdoc.unesco.org/ark:/48223/pf0000386693" target="_blank" rel="noopener noreferrer">UNESCO – Guidance for Generative AI in Education &amp; Research (2023)</a>. Nele você encontrará fundamentos, boas práticas e exemplos práticos que fortalecem o uso da IA como aliada pedagógica — ética, crítica e centrada no aluno.</p>
           <p class="category-link">🔗 <a href="etica-no-uso-da-inteligencia-artificial.html">Veja também o conteúdo sobre Ética no Uso da Inteligência Artificial</a></p>
-          <p><strong>⭐ DICA:</strong> Professores que aprendem a dialogar com a IA ensinam alunos a fazer o mesmo — com responsabilidade, ética e autonomia.</p>
         </section>
 
+        <section class="full-banner"><strong>⭐ DICA:</strong> Professores que aprendem a dialogar com a IA ensinam alunos a fazer o mesmo — com responsabilidade, ética e autonomia.</section>
         <footer class="home-footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
       </div>
     </main>
@@ -128,3 +215,9 @@
   <script src="../assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
