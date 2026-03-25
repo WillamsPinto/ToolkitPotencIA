@@ -15,21 +15,93 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    .comparison-table-section h2 {
+      margin: 0 0 22px;
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 700;
+      text-align: left;
+      color: #202124;
+    }
     .comparison-table {
       width: 100%;
+      min-width: 560px;
       border-collapse: collapse;
       margin-top: 15px;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     .comparison-table th, .comparison-table td {
       border: 1px solid #ddd;
       padding: 10px;
       text-align: left;
+      vertical-align: top;
+      word-break: break-word;
     }
     .comparison-table th {
       background-color: #e9ecef;
     }
 
+    .assistentes-intro.content-section p,
+    .content-section.content-section-gap p,
+    .content-section.content-section-gap li {
+      overflow-wrap: anywhere;
+    }
 
+    .assistentes-page .assistentes-intro p,
+    .assistentes-page .content-section p,
+    .comparison-table-section p {
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table-section {
+        padding: 16px;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .assistentes-page .assistentes-hero {
+        height: 220px;
+      }
+
+      .assistentes-page .assistentes-hero .hero-overlay h1 {
+        font-size: 22px;
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .assistentes-page .content-section,
+      .assistentes-page .categories {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .assistentes-page .assistentes-intro h2,
+      .assistentes-page .content-section h2,
+      .comparison-table-section h2 {
+        font-size: 22px;
+        line-height: 1.3;
+      }
+
+      .assistentes-page .assistentes-intro p,
+      .assistentes-page .content-section p,
+      .assistentes-page .content-section li {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .comparison-table {
+        min-width: 480px;
+      }
+    }
   </style>
 </head>
 <body class="assistentes-page">
@@ -64,7 +136,7 @@
           </ul>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>O que é Inteligência Artificial (IA)?</h2>
           <p>A Inteligência Artificial (IA) é o campo da computação que desenvolve sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana, como reconhecer padrões, classificar informações, prever resultados e apoiar decisões.</p>
           <p>Exemplos de aplicações de IA:</p>
@@ -77,7 +149,7 @@
           <p>Em termos técnicos, a IA inclui diversas abordagens, como machine learning, redes neurais, sistemas especialistas e visão computacional. Seu foco principal é analisar dados e tomar decisões com base em padrões aprendidos.</p>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>O que é Inteligência Artificial Generativa (IAG)?</h2>
           <p>A Inteligência Artificial Generativa (IAG) é um subconjunto da IA voltado para a criação de novos conteúdos. Em vez de apenas classificar ou prever, ela gera textos, imagens, áudios, códigos ou vídeos a partir de padrões aprendidos durante o treinamento.</p>
           <p>Exemplos de IAG:</p>
@@ -119,7 +191,7 @@
             </tbody>
           </table>
         </section>
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>O papel da IA na Educação 4.0</h2>
           <p>A Inteligência Artificial desempenha um papel estratégico no apoio à inovação pedagógica, permitindo:</p>
           <ul>
@@ -130,7 +202,7 @@
           </ul>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>Benefícios da IA para Educadores</h2>
           <table class="comparison-table">
             <thead>
@@ -160,7 +232,7 @@
           </table>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>Exemplo Prático: Projeto Interdisciplinar com IA</h2>
           <p>Turma do 8º ano desenvolve um projeto sobre sustentabilidade com apoio da IA generativa.</p>
           <table class="comparison-table">
@@ -188,7 +260,7 @@
           <br/>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>Formação Docente e Transformação Digital</h2>
           <p>Para aproveitar o potencial da IA na educação, é essencial que os educadores:</p>
           <ul>
@@ -199,7 +271,7 @@
           <p>A Inteligência Artificial não substitui o professor. Ela amplia suas possibilidades, personaliza a aprendizagem e enriquece a experiência educacional. Na Educação 4.0, a IA deve ser vista como uma parceira estratégica para formar alunos críticos, criativos e preparados para o futuro.</p>
         </section>
 
-        <section class="content-section content-section-gap">
+        <section class="assistentes-intro content-section">
           <h2>Quer se aprofundar?</h2>
           <p>Para explorar com mais profundidade o uso da IA em contextos de ensino e aprendizagem, acesse o <a href="https://unesdoc.unesco.org/ark:/48223/pf0000386693" target="_blank" rel="noopener noreferrer">UNESCO – Guidance for Generative AI in Education &amp; Research (2023)</a>. Nele você encontrará fundamentos, boas práticas e exemplos práticos que fortalecem o uso da IA como aliada pedagógica — ética, crítica e centrada no aluno.</p>
           <p class="category-link">🔗 <a href="etica-no-uso-da-inteligencia-artificial.html">Veja também o conteúdo sobre Ética no Uso da Inteligência Artificial</a></p>
