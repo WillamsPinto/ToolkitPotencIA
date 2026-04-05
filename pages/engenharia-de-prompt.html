@@ -8,6 +8,183 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .assistentes-page .assistentes-intro p,
+    .assistentes-page .content-section p,
+    .assistentes-page .content-section li,
+    .assistentes-page .category-block p,
+    .assistentes-page .category-block li {
+      text-align: justify;
+      overflow-wrap: anywhere;
+    }
+
+    .assistentes-page .assistentes-intro h2,
+    .assistentes-page .content-section h2,
+    .assistentes-page .about-block h2 {
+      margin: 0 0 22px;
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: #202124;
+      text-align: left;
+    }
+
+    .assistentes-page .content-section h3:not(.category-title) {
+      margin: 24px 0 8px;
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #176b9a;
+      text-align: left;
+    }
+
+    .assistentes-page .content-section ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .assistentes-page .content-section ul li + li,
+    .assistentes-page .category-block ul li + li {
+      margin-top: 8px;
+    }
+
+    .assistentes-page .category-title {
+      margin: 0 0 10px;
+      padding-left: 0;
+    }
+
+    .assistentes-page .category-title::before {
+      display: none;
+    }
+
+    .assistentes-page .prompt-carousel {
+      margin-top: 28px;
+      padding: 24px;
+      background: #f6f9fc;
+      border: 1px solid #d7e4ee;
+      border-radius: 18px;
+    }
+
+    .assistentes-page .prompt-carousel-stage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #eef4f8;
+      aspect-ratio: 16 / 9;
+    }
+
+    .assistentes-page .prompt-carousel-slide {
+      display: none;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .assistentes-page .prompt-carousel-slide.is-active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .assistentes-page .prompt-carousel-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .assistentes-page .prompt-carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .assistentes-page .prompt-carousel-button {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 18px;
+      background: #176b9a;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .assistentes-page .prompt-carousel-button:hover,
+    .assistentes-page .prompt-carousel-button:focus-visible {
+      background: #125a82;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .assistentes-page .prompt-carousel-status {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #355166;
+      text-align: center;
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .assistentes-page .assistentes-hero {
+        height: 220px;
+      }
+
+      .assistentes-page .assistentes-hero .hero-overlay h1 {
+        font-size: 22px;
+        padding: 0 20px;
+      }
+
+      .assistentes-page .prompt-carousel {
+        padding: 16px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .assistentes-page .content-section,
+      .assistentes-page .categories {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .assistentes-page .assistentes-intro h2,
+      .assistentes-page .content-section h2,
+      .assistentes-page .about-block h2,
+      .assistentes-page .content-section h3:not(.category-title) {
+        line-height: 1.3;
+      }
+
+      .assistentes-page .assistentes-intro p,
+      .assistentes-page .content-section p,
+      .assistentes-page .content-section li,
+      .assistentes-page .category-block p,
+      .assistentes-page .category-block li {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .assistentes-page .content-section h3:not(.category-title) {
+        font-size: 18px;
+      }
+
+      .assistentes-page .prompt-carousel-controls {
+        flex-wrap: wrap;
+      }
+
+      .assistentes-page .prompt-carousel-button,
+      .assistentes-page .prompt-carousel-status {
+        width: 100%;
+      }
+
+    }
+  </style>
 </head>
 <body class="assistentes-page">
   <header class="mobile-header">
@@ -34,8 +211,9 @@
         <section class="assistentes-intro content-section">
           <h2>O que é Engenharia de Prompt?</h2>
           <p>Engenharia de prompt é a prática de desenvolver instruções (prompts) bem estruturadas e específicas para obter respostas eficazes e alinhadas ao objetivo desejado de um modelo de Inteligência Artificial Generativa, como ChatGPT ou Gemini. Ela é fundamental para transformar a IA em uma aliada poderosa no contexto educacional.</p>
-          <p>Quanto melhor o prompt, melhor a resposta da IA.</p>
         </section>
+
+        <section class="full-banner">Quanto melhor o prompt, melhor a resposta da IA.</section>
 
         <section class="content-section content-section-gap">
           <h2>Elementos Essenciais de um Prompt Eficiente</h2>
@@ -52,7 +230,7 @@
 
         <section class="categories content-section">
           <article class="category-block">
-            <h3 class="category-title dot-green">Princípios para Design de Bons Prompts</h3>
+            <h3 class="category-title">Princípios para Design de Bons Prompts</h3>
             <ul>
               <li>Comece simples: Um prompt direto costuma funcionar melhor do que algo excessivamente complexo.</li>
               <li>Itere e refine: Teste variações até encontrar o formato que “desperta” a melhor resposta da IA.</li>
@@ -88,7 +266,38 @@
         </section>
 
         <section class="content-section content-section-gap">
-          <h2>Exemplos Práticos na Educação</h2>
+          <h2>Princípios Éticos Fundamentais</h2>
+          <div class="prompt-carousel" data-carousel tabindex="0" aria-label="Carrossel com 6 imagens de referência">
+            <div class="prompt-carousel-stage">
+              <figure class="prompt-carousel-slide is-active">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image1.png" alt="Ilustração sobre engenharia de prompt" />
+              </figure>
+              <figure class="prompt-carousel-slide">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image2.png" alt="Exemplos práticos de aplicação" />
+              </figure>
+              <figure class="prompt-carousel-slide">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image3.png" alt="Inteligência artificial como aliada da educação" />
+              </figure>
+              <figure class="prompt-carousel-slide">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image4.png" alt="Ética no uso da inteligência artificial" />
+              </figure>
+              <figure class="prompt-carousel-slide">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image5.png" alt="Catálogo visual do projeto" />
+              </figure>
+              <figure class="prompt-carousel-slide">
+                <img src="../assets/assistente_orientacao/engenharia_prompt/Image6.png" alt="Jornada visual do toolkit" />
+              </figure>
+            </div>
+            <div class="prompt-carousel-controls">
+              <button class="prompt-carousel-button" type="button" data-carousel-prev aria-label="Voltar para a imagem anterior">Anterior</button>
+              <p class="prompt-carousel-status" data-carousel-status aria-live="polite">Imagem 1 de 6</p>
+              <button class="prompt-carousel-button" type="button" data-carousel-next aria-label="Avançar para a próxima imagem">Próxima</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section content-section-gap">
+          <h2>Quais são os Exemplos Práticos na Educação?</h2>
           <h3>Prompt Fraco:</h3>
           <p>"Explique a fotossíntese."</p>
           <h3>Prompt Melhorado:</h3>
@@ -102,7 +311,7 @@
         </section>
 
         <section class="content-section content-section-gap">
-          <h2>Prompts para Elaboração de Conteúdo</h2>
+          <h2>Como criar Prompts para Elaboração de Conteúdo?</h2>
           <ul>
             <li>Alfabetização Midiática: "Explique alfabetização midiática para ensino médio. Indique fontes, apresente diferentes pontos de vista, explique limitações e incentive reflexão crítica."</li>
             <li>Mudança Climática: "Crie infográfico sobre mudança climática para 8º ano. Inclua dados atualizados, cite referências, destaque vieses e proponha debate."</li>
@@ -124,5 +333,58 @@
 
   <script src="../assets/js/sidebar.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+        const slides = Array.from(carousel.querySelectorAll('.prompt-carousel-slide'));
+        const prevButton = carousel.querySelector('[data-carousel-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-next]');
+        const status = carousel.querySelector('[data-carousel-status]');
+        let currentIndex = 0;
+
+        function renderSlide(index) {
+          slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle('is-active', slideIndex === index);
+          });
+
+          if (status) {
+            status.textContent = 'Imagem ' + (index + 1) + ' de ' + slides.length;
+          }
+        }
+
+        function showNext() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          renderSlide(currentIndex);
+        }
+
+        function showPrevious() {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          renderSlide(currentIndex);
+        }
+
+        if (prevButton) {
+          prevButton.addEventListener('click', showPrevious);
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener('click', showNext);
+        }
+
+        carousel.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            showPrevious();
+          }
+
+          if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            showNext();
+          }
+        });
+
+        renderSlide(currentIndex);
+      });
+    });
+  </script>
 </body>
 </html>
