@@ -18,6 +18,10 @@
       overflow-wrap: anywhere;
     }
 
+    .assistentes-page .content-section.content-section-gap {
+      background: #fff;
+    }
+
     .assistentes-page .assistentes-intro h2,
     .assistentes-page .content-section h2,
     .assistentes-page .about-block h2 {
@@ -132,6 +136,77 @@
       flex: 1;
     }
 
+    .comparison-table-section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .comparison-table-section h2 {
+      margin: 0 0 22px;
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 700;
+      text-align: left;
+      color: #202124;
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      margin-top: 15px;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      word-break: break-word;
+    }
+
+    .comparison-table th {
+      background-color: #e9ecef;
+    }
+
+    .assistentes-page .about-block a {
+      color: #176b9a;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .assistentes-page .about-block a:hover,
+    .assistentes-page .about-block a:focus-visible {
+      color: #125a82;
+    }
+
+    .assistentes-page section.about-block,
+    .assistentes-page .about-block {
+      background: #fff !important;
+      padding-top: 26px;
+      padding-bottom: 28px;
+      margin-bottom: 0;
+    }
+
+    .assistentes-page section.about-block::before,
+    .assistentes-page .about-block::before {
+      background: #fff;
+    }
+
+    .assistentes-page .home-footer {
+      margin-top: 0;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      border-top: 1px solid #d9d9d9;
+      background: #ececec;
+    }
+
     @media (max-width: 768px) {
       .assistentes-page .assistentes-hero {
         height: 220px;
@@ -143,6 +218,10 @@
       }
 
       .assistentes-page .prompt-carousel {
+        padding: 16px;
+      }
+
+      .comparison-table-section {
         padding: 16px;
       }
     }
@@ -181,6 +260,15 @@
       .assistentes-page .prompt-carousel-button,
       .assistentes-page .prompt-carousel-status {
         width: 100%;
+      }
+
+      .comparison-table-section h2 {
+        font-size: 22px;
+        line-height: 1.3;
+      }
+
+      .comparison-table {
+        min-width: 480px;
       }
 
     }
@@ -296,6 +384,46 @@
           </div>
         </section>
 
+        <section class="content-section content-section-gap comparison-table-section">
+          <h2>Dicas Avançadas para Prompts Educacionais</h2>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Dica</th>
+                <th>Aplicação</th>
+                <th>Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Seja Específico</td>
+                <td>Descreva o que deseja com detalhes claros</td>
+                <td>"Crie uma atividade sobre frações para o 5º ano com jogos e exemplos visuais."</td>
+              </tr>
+              <tr>
+                <td>Use Etapas</td>
+                <td>Divida a tarefa em partes</td>
+                <td>"1. Explique o conceito; 2. Dê um exemplo; 3. Proponha uma atividade."</td>
+              </tr>
+              <tr>
+                <td>Defina um papel</td>
+                <td>Peça à IA para assumir uma função</td>
+                <td>"Finja ser um professor de história e explique a Revolução Francesa de forma teatral."</td>
+              </tr>
+              <tr>
+                <td>Use contexto educacional</td>
+                <td>Inclua ano, disciplina e BNCC</td>
+                <td>"Crie uma atividade sobre poluição para o 7º ano com base na habilidade EF07CI08."</td>
+              </tr>
+              <tr>
+                <td>Adote estilo/tom adequado</td>
+                <td>Indique se o texto deve ser formal, infantil, instrucional</td>
+                <td>"Explique a digestão como se fosse uma história para crianças de 8 anos."</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
         <section class="content-section content-section-gap">
           <h2>Quais são os Exemplos Práticos na Educação?</h2>
           <h3>Prompt Fraco:</h3>
@@ -319,7 +447,6 @@
             <li>Planejamento Pedagógico: "Sugira sequência de três aulas que promova autonomia crítica, inclua momentos de uso da IA como apoio e descreva como verificar respostas."</li>
           </ul>
         </section>
-
         <section class="about-block content-section about-gap">
           <h2>Quer se aprofundar?</h2>
           <p>Se você deseja explorar mais sobre técnicas avançadas de engenharia de prompt, acesse o <a href="https://www.promptingguide.ai" target="_blank" rel="noopener noreferrer">Prompting Guide</a>. Lá você encontrará exemplos, boas práticas e fundamentos detalhados para criar prompts ainda mais eficientes.</p>
