@@ -85,6 +85,12 @@
               <h2>Assistentes disponí­veis</h2>
             </div>
 
+            <div class="assistant-carousel-nav" data-assistant-nav>
+              <button class="assistant-carousel-button" type="button" data-carousel-prev aria-label="Categoria anterior">Anterior</button>
+              <div class="assistant-carousel-status" data-carousel-status>1 / 4</div>
+              <button class="assistant-carousel-button" type="button" data-carousel-next aria-label="Próxima categoria">Próximo</button>
+            </div>
+
             <div class="assistant-category">
               <h3>Gerar ideias e estruturar propostas pedagógicas</h3>
               <div class="prompt-example">
@@ -228,7 +234,7 @@
   <script src="../assets/js/main.js"></script>
   <script>
     (() => {
-      const section = document.querySelector('.planejamento-page .content-section.alt-bg');
+      const section = document.querySelector('.planejamento-page .content-section.alt-bg[aria-label]');
       if (!section) return;
 
       const categories = Array.from(section.querySelectorAll('.assistant-category'));
