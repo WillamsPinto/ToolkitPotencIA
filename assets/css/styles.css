@@ -2065,6 +2065,21 @@ body.catalogo-home-page{
 body.planejamento-page{
   background:#ffffff;
 }
+.avaliacao-page,
+.avaliacao-page p,
+.avaliacao-page li,
+.avaliacao-page h1,
+.avaliacao-page h2,
+.avaliacao-page h3,
+.avaliacao-page h4,
+.avaliacao-page a,
+.avaliacao-page strong,
+.avaliacao-page .assistant-carousel-status,
+.avaliacao-page .tool-card p,
+.avaliacao-page .planning-example-card p,
+.avaliacao-page .prompt-example p{
+  color:#000000;
+}
 .planejamento-page .layout{
   grid-template-columns:249px minmax(0,1fr);
   min-height:100vh;
