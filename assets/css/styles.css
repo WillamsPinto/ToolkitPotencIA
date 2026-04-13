@@ -2080,6 +2080,21 @@ body.planejamento-page{
 .avaliacao-page .content .prompt-example p{
   color:#000000;
 }
+.mediacao-page .content,
+.mediacao-page .content p,
+.mediacao-page .content li,
+.mediacao-page .content h1,
+.mediacao-page .content h2,
+.mediacao-page .content h3,
+.mediacao-page .content h4,
+.mediacao-page .content a,
+.mediacao-page .content strong,
+.mediacao-page .content .assistant-carousel-status,
+.mediacao-page .content .tool-card p,
+.mediacao-page .content .planning-example-card p,
+.mediacao-page .content .prompt-example p{
+  color:#000000;
+}
 .planejamento-page .layout{
   grid-template-columns:249px minmax(0,1fr);
   min-height:100vh;
